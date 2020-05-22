@@ -1,6 +1,7 @@
 
 Pod::Spec.new do |s|
 
+
   s.name         = "TYICSDK"
   s.version      = "1.0.0"
   s.summary      = "TYICSDK"
@@ -13,6 +14,12 @@ Pod::Spec.new do |s|
   s.author             = "alexichen"
   s.platform     = :ios
   s.platform     = :ios, "9.0"
+
+  valid_archs = ['armv7','arm64', 'x86_64']
+  s.xcconfig = {
+    'VALID_ARCHS' =>  valid_archs.join(' '),
+  }
+
 
   s.source       = { :git => "https://github.com/JamesChenGithub/TYICSDK.git", :tag => "#{s.version}" }
 
