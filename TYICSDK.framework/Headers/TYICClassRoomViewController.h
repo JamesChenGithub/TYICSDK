@@ -25,9 +25,9 @@ typedef void (^TICWebOpenUrlFinishBlock)(TYICClassRoomViewController *webControl
 
 @interface TYICClassRoomViewController : UIViewController
 
-// 使用-initWithURL:roomOption:mainWebOption 进行构建
-+ (instancetype)new  __attribute__((unavailable("Use +webClassRoomWithConfig:uiOption:webOption instead")));
-- (instancetype)init __attribute__((unavailable("Use +webClassRoomWithConfig:uiOption:webOption instead")));
+// 使用+classRoomWithConfig:uiOption:webOption 进行构建
++ (instancetype)new  __attribute__((unavailable("Use +classRoomWithConfig:uiOption:webOption instead")));
+- (instancetype)init __attribute__((unavailable("Use +classRoomWithConfig:uiOption:webOption instead")));
 
 /**
 * 使用H5+Native方式使用
@@ -35,7 +35,7 @@ typedef void (^TICWebOpenUrlFinishBlock)(TYICClassRoomViewController *webControl
 * @param uiOption : 如果要进教室，配置UI相关的参数;
 * @param webOption : webview相关的配置;
 */
-+ (instancetype)webClassRoomWithConfig:(TYICClassRoomConfig * _Nonnull)roomConfig uiOption:(NSDictionary *_Nullable)uiOption webOption:(NSDictionary *_Nullable)webOption;
++ (instancetype)classRoomWithConfig:(TYICClassRoomConfig * _Nonnull)roomConfig uiOption:(NSDictionary *_Nullable)uiOption webOption:(NSDictionary *_Nullable)webOption;
 
 /**
  * 当前是否在教室内;
