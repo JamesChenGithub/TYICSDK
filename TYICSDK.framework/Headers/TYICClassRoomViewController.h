@@ -5,8 +5,8 @@
 //  Created by AlexiChen on 2020/5/6.
 //  Copyright © 2020 AlexiChen. All rights reserved.
 //
-// WebSaaSSDKVersion : 1.0.166
-// WebGitCommitID : 6f106d2ce2a84371571d90d02c396eea890802d6
+// WebSaaSSDKVersion : 1.0.170
+// WebGitCommitID : 55f9d28a66fbd10ac5064d2647a858a9bf2ee733
 
 #import <UIKit/UIKit.h>
 #import "TYICClassRoomConfig.h"
@@ -37,10 +37,7 @@ typedef void (^TICWebOpenUrlFinishBlock)(TYICClassRoomViewController *webControl
 */
 + (instancetype)classRoomWithConfig:(TYICClassRoomConfig * _Nonnull)roomConfig uiOption:(NSDictionary *_Nullable)uiOption webOption:(NSDictionary *_Nullable)webOption;
 
-/**
- * 当前是否在教室内;
- */
-+ (BOOL)hasJoinedClassRoom;
+
 
 
 
