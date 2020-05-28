@@ -5,8 +5,8 @@
 //  Created by AlexiChen on 2020/5/6.
 //  Copyright © 2020 AlexiChen. All rights reserved.
 //
-// WebSaaSSDKVersion : 1.0.171
-// WebGitCommitID : 925587e1d8a5f60e8e34cf91ac001ef4c34ae16e
+// WebSaaSSDKVersion : 1.0.197
+// WebGitCommitID : de374418fc79d017718fc11e510f8dd0045977c7
 
 #import <UIKit/UIKit.h>
 #import "TYICClassRoomConfig.h"
@@ -14,6 +14,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 extern NSString *_Nonnull const TYIC_SDK_Version;
+
+// 开始加载课堂通知
+extern NSString *_Nonnull const TYICWebViewStartLoadNotify;
+// 加载课堂失败通知
+extern NSString *_Nonnull const TYICWebViewLoadFailedNotify;
+// 加载课堂H5完成通知
+extern NSString *_Nonnull const TYICWebViewLoadCompleteNotify;
+// 进入课堂（TRTC enterRoom）完成通知
+extern NSString *_Nonnull const TYICEnterClassRoomCompleteNotify;
 
 
 @class TYICClassRoomViewController;

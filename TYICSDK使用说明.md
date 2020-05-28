@@ -32,8 +32,10 @@
 
 | API | 说明 | 
 | --- | ---- | 
+| TYICWebViewStartLoadNotify | 开始加载课堂通知 |
+| TYICWebViewLoadCompleteNotify | 加载课堂H5完成通知 |
+| | TYICWebViewLoadCompleteNotify | 进入课堂（TRTC enterRoom）完成通知 |
 |  `+ (instancetype)classRoomWithConfig:(TYICClassRoomConfig * _Nonnull)roomConfig uiOption:(NSDictionary *_Nullable)uiOption webOption:(NSDictionary *_Nullable)webOption` | 推荐的创建上课页面viewcontroller方法，roomConfig必传，uiOption/webOption 非必传，如果需要 |
-|  `+ (BOOL)hasJoinedClassRoom` | 用于判断当前是否在上课 |
 
 示例代码如下:****
 
