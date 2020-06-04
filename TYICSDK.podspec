@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   s.dependency 'Masonry'
   s.dependency 'YYModel'
-  s.dependency 'TXLiteAVSDK_TRTC'
+  s.dependency 'TXLiteAVSDK_TRTC', '7.2.8932'
 
 end
