@@ -5,8 +5,8 @@
 //  Created by AlexiChen on 2020/5/6.
 //  Copyright © 2020 AlexiChen. All rights reserved.
 //
-// WebSaaSSDKVersion : 1.0.229
-// WebGitCommitID : 99f2c9f1e4f90b9582a9ddd9377a9871fbae8f83
+// WebSaaSSDKVersion : 2.0.231
+// WebGitCommitID : 3cb913027f9757721a49da01aca793e8174360ac
 
 #import <UIKit/UIKit.h>
 #import "TYICClassRoomConfig.h"
