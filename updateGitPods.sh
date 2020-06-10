@@ -2,8 +2,7 @@
 
 script_dir="$( cd "$( dirname "$0"  )" && pwd  )"
 
-
-#sed -i "" -e  "s/s.version      = */s.version      = \"$1\"/g" TYICSDK.podspec
+sed -i "" -e  "s/s\.version.*= \".*\"/s\.version      = \"$1\"/g" TYICSDK.podspec
 
 git status
 git add *
