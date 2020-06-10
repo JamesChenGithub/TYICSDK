@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TYICSDK"
-  s.version      = "2.0.0"
+  s.version      = "2.0.1"
   s.summary      = "TYICSDK"
   s.description  = <<-DESC
                       腾讯云互动教育极简单接入apaas方案
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
 
   s.source       = { :git => "https://github.com/JamesChenGithub/TYICSDK.git", :tag => "#{s.version}" }
-
+  s.resource = 'tyicimage.bundle'
   # the framework upload to Cocoa Pods
   s.vendored_frameworks = 'TYICSDK.framework'
   s.frameworks = 'Foundation', 'Accelerate'

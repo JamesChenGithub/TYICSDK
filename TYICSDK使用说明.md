@@ -68,3 +68,81 @@ if (vc) {
 
 ## Android使用方式
 
+### 开发环境
+* Android studio 3.0+
+* Android 4.4（API 19）及以上系统
+
+### 快速集成 SDK
+在项目中快速集成 TYIC 组件，TYIC 组件已发布到 jcenter，您可以通过配置 gradle 自动下载更新。使用 Android Studio 打开需要集成 SDK 的工程，然后通过简单的三个步骤修改`app/build.gradle`文件，即可完成 SDK 集成。
+
+1. 添加 SDK 依赖。在`dependencies`中添加 TYIC 以及其它模块的依赖。
+
+```groovy
+ dependencies {
+    // TYIC aPaaS 组件
+    implementation "com.tencent.tyic:tyicsdk:2.0.0.0"
+    // 实时音视频
+    implementation "com.tencent.liteav:LiteAVSDK_TRTC:6.8.8003"
+}
+```
+
+TYIC组件默认引用普通版 TRTC。如果您需要集成专业版 TRTC，首先要把 TYIC 组件依赖的 TRTC 剔除掉，然后集成专业版 TRTC。具体可参考以下示例：
+
+```groovy
+ dependencies {
+     // TYIC aPaaS 组件
+    implementation("com.tencent.tyic:tyicsdk:2.0.0.0") {
+        exclude group: 'com.tencent.liteav', module: 'LiteAVSDK_TRTC'
+    }
+}
+```
+
+2. 指定 App 使用架构。在`defaultConfig`中，指定 App 使用的 CPU 架构（目前 TYIC 支持`armeabi`和`armeabi-v7a`）。
+
+```groovy
+  defaultConfig {
+      ndk {
+          abiFilters "armeabi", "armeabi-v7a"
+      }
+  }
+```
+
+3. 使用 JDK 1.8 编译。
+
+```groovy
+compileOptions {
+    sourceCompatibility 1.8
+    targetCompatibility 1.8
+}
+```
+
+4. 同步 SDK。单击【Sync Now】，如果您的网络连接 jcenter 正常，SDK 就会自动下载集成到工程中。
+
+### 申请必要权限（Android 6.0 以上）
+Android 6.0 以上系统，拉起组件前，需动态申请麦克风录音、摄像头和写存储器权限。
+
+```java
+Manifest.permission.RECORD_AUDIO
+Manifest.permission.CAMERA
+Manifest.permission.WRITE_EXTERNAL_STORAGE
+```
+
+### 调起 SaaS 组件
+只需传递5个参数就可调起 TYIC 组件主页面，分别为SDKAppID、课堂编号、用户账号、用户签名、Token和NewEnterID。
+
+```java
+Intent intent = new Intent(getActivity(), InClassActivity.class);
+intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+
+Bundle bundle = new Bundle();
+bundle.putInt(Constants.KEY_CLASS_SDKAPPID, sdkAppId;
+bundle.putLong(Constants.KEY_CLASS_CLASS_ID, classId);
+bundle.putString(Constants.KEY_CLASS_USER_ID, userId);
+bundle.putString(Constants.KEY_CLASS_USER_SIG, userSig);
+bundle.putString(Constants.KEY_CLASS_TOKEN, token);
+bundle.putInt(Constants.KEY_CLASS_NEW_ENTER_ID, newEnterId);
+
+intent.putExtras(bundle);
+startActivity(intent);
+```
+
