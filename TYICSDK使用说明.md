@@ -17,8 +17,7 @@ pod 'TXLiteAVSDK_TRTC'
 ```
 
 2.  在终端中跳到`Podfile`所在目录，`pod install` 即可自动安装所需要的依赖;
-3. 添加 [ tyicimage.bundle ](http://dldir1.qq.com/hudongzhibo/TYICSDK/bundle/tyicimage.bundle.zip) 至工程对应的Target中，并在Target的`Build Phases`-->`Copy Bundle Resources`配置加入`tyicimage.bundle`，若不添加，在教室内展现时，会有如音量提示无法正常展现等问题：
-![](https://main.qcloudimg.com/raw/79a3c356ddfd67e173dcd26db963917c.png)
+
 
 ### 使用说明
 
@@ -64,6 +63,12 @@ if (vc) {
 	NSLog(@"参数有误");
 }
 ```
+
+**注意事项**：
+1. 如果的你App配置类似下面: 1. 支持iPad ,  2. 支持所有方向；那么请勾选上 `Requires full screen` 选项 (该选项对现有App不影响)，否则 ` TYICClassRoomViewController ` 无法正常旋转至横屏
+
+![](https://main.qcloudimg.com/raw/26926026e4a4ed5d565ede21258a47ab.png)
+
 
 
 ## Android使用方式

@@ -5,8 +5,8 @@
 //  Created by AlexiChen on 2020/5/6.
 //  Copyright © 2020 AlexiChen. All rights reserved.
 //
-// WebSaaSSDKVersion : 2.0.236
-// WebGitCommitID : a236ae095695516eb12154f02610296516756022
+// WebSaaSSDKVersion : 2.0.248
+// WebGitCommitID : d8014d86efa941637ed40be0dbf7add78e919baa
 
 #import <UIKit/UIKit.h>
 #import "TYICClassRoomConfig.h"
@@ -23,6 +23,12 @@ extern NSString *_Nonnull const TYICWebViewLoadFailedNotify;
 extern NSString *_Nonnull const TYICWebViewLoadCompleteNotify;
 // 进入课堂（TRTC enterRoom）完成通知
 extern NSString *_Nonnull const TYICEnterClassRoomCompleteNotify;
+
+// 开始退出课堂（TRTC exitRoom）通知
+extern NSString *_Nonnull const TYICStartExitClassRoomNotify;
+// 完全退出通知
+extern NSString *_Nonnull const TYICExitClassRoomCompleteNotify;
+
 
 
 @class TYICClassRoomViewController;
@@ -44,7 +50,7 @@ typedef void (^TICWebOpenUrlFinishBlock)(TYICClassRoomViewController *webControl
 * @param uiOption : 如果要进教室，配置UI相关的参数;
 * @param webOption : webview相关的配置;
 */
-+ (instancetype)classRoomWithConfig:(TYICClassRoomConfig * _Nonnull)roomConfig uiOption:(NSDictionary *_Nullable)uiOption webOption:(NSDictionary *_Nullable)webOption;
++ (instancetype _Nullable)classRoomWithConfig:(TYICClassRoomConfig * _Nonnull)roomConfig uiOption:(NSDictionary *_Nullable)uiOption webOption:(NSDictionary *_Nullable)webOption;
 
 
 
