@@ -5,8 +5,8 @@
 //  Created by AlexiChen on 2020/5/6.
 //  Copyright © 2020 AlexiChen. All rights reserved.
 //
-// WebSaaSSDKVersion : 2.0.249
-// WebGitCommitID : a78ecbf5a269b4be73766d55d36d2da1ffc1b33d
+// WebSaaSSDKVersion : 2.0.252
+// WebGitCommitID : ddd5a56ec3649b1369667c9fa4f00a7c9a31ba30
 
 #import <UIKit/UIKit.h>
 #import "TYICClassRoomConfig.h"
@@ -23,10 +23,9 @@ extern NSString *_Nonnull const TYICWebViewLoadFailedNotify;
 extern NSString *_Nonnull const TYICWebViewLoadCompleteNotify;
 // 进入课堂（TRTC enterRoom）完成通知
 extern NSString *_Nonnull const TYICEnterClassRoomCompleteNotify;
-
 // 开始退出课堂（TRTC exitRoom）通知
 extern NSString *_Nonnull const TYICStartExitClassRoomNotify;
-// 完全退出通知
+// TYICClassRoomViewController实例释放，完全退出通知
 extern NSString *_Nonnull const TYICExitClassRoomCompleteNotify;
 
 
