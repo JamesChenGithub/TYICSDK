@@ -5,8 +5,8 @@
 //  Created by AlexiChen on 2020/5/6.
 //  Copyright © 2020 AlexiChen. All rights reserved.
 //
-// WebSaaSSDKVersion : 2.0.252
-// WebGitCommitID : ddd5a56ec3649b1369667c9fa4f00a7c9a31ba30
+// WebSaaSSDKVersion : 2.0.257
+// WebGitCommitID : 0f8e3d5b2a57c4af335d0dcde1b225f8590074b1
 
 #import <UIKit/UIKit.h>
 #import "TYICClassRoomConfig.h"
@@ -29,14 +29,6 @@ extern NSString *_Nonnull const TYICStartExitClassRoomNotify;
 extern NSString *_Nonnull const TYICExitClassRoomCompleteNotify;
 
 
-
-@class TYICClassRoomViewController;
-
-typedef void (^TICWebOpenUrlFailedBlock)(NSString *module, int code, NSString *_Nullable desc);
-typedef NSDictionary *_Nullable (^TICWebOpenUrlContinueBlock)(void);
-typedef void (^TICWebOpenUrlBlock)(TYICClassRoomViewController *webController);
-typedef void (^TICWebOpenUrlFinishBlock)(TYICClassRoomViewController *webController, BOOL openSucc);
-
 @interface TYICClassRoomViewController : UIViewController
 
 // 使用+classRoomWithConfig:uiOption:webOption 进行构建
@@ -50,10 +42,6 @@ typedef void (^TICWebOpenUrlFinishBlock)(TYICClassRoomViewController *webControl
 * @param webOption : webview相关的配置;
 */
 + (instancetype _Nullable)classRoomWithConfig:(TYICClassRoomConfig * _Nonnull)roomConfig uiOption:(NSDictionary *_Nullable)uiOption webOption:(NSDictionary *_Nullable)webOption;
-
-
-
-
 
 @end
 

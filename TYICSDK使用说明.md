@@ -30,7 +30,7 @@ pod 'TXLiteAVSDK_TRTC'
 | userId |  string |  进教室用户的userId，可参考 [云 API - 学生老师注册](https://classroom-docs.qcloudtrtc.com/#/business/Class?id=3%e5%ad%a6%e7%94%9f%e8%80%81%e5%b8%88%e6%b3%a8%e5%86%8c) | 必传 |
 | token | string | 可参考 [云 API - 换取票据](https://classroom-docs.qcloudtrtc.com/#/business/Class?id=4-%e6%8d%a2%e5%8f%96%e7%a5%a8%e6%8d%ae)，返回的token信息 | 必传 |
 | userSig | string | 可参考 [云 API - 换取票据](https://classroom-docs.qcloudtrtc.com/#/business/Class?id=4-%e6%8d%a2%e5%8f%96%e7%a5%a8%e6%8d%ae)，返回的userSig信息 | 必传 |
-| newEnterId | string | 机构ID，可参考 [云 API - 创建机构] (https://classroom-docs.qcloudtrtc.com/#/business/Class?id=1%e5%88%9b%e5%bb%ba%e6%9c%ba%e6%9e%84) | 必传 |
+| newEnterId | string | 机构ID，可参考 [云 API - 创建机构](https://classroom-docs.qcloudtrtc.com/#/business/Class?id=1%e5%88%9b%e5%bb%ba%e6%9c%ba%e6%9e%84) | 必传 |
 | classId | uint32 | 课堂编号，可参考 [云 API- 创建课堂](https://classroom-docs.qcloudtrtc.com/#/business/Class?id=12-%e5%88%9b%e5%bb%ba%e8%af%be%e5%a0%82)| 必传 | 
 
 2. `TYICClassRoomViewController `说明
