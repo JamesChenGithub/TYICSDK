@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TYICSDK"
-  s.version      = "2.0.271"
+  s.version      = "2.0.272"
   s.summary      = "TYICSDK"
   s.description  = <<-DESC
                       腾讯云互动教育极简单接入apaas方案
@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'Accelerate'
   s.dependency 'Masonry'
   s.dependency 'YYModel'
-  s.dependency 'TXLiteAVSDK_TRTC', '9.2.8940'
+  s.dependency 'TXLiteAVSDK_TRTC', '7.2.8940'
 
 end
