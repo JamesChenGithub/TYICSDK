@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TYICSDK"
-  s.version      = "2.0.290"
+  s.version      = "2.0.291"
   s.summary      = "TYICSDK"
   s.description  = <<-DESC
                       腾讯云互动教育极简单接入apaas方案
