@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "TYICSDK"
-  s.version      = "2.0.340"
+  s.version      = "2.0.347"
   s.summary      = "TYICSDK"
   s.description  = <<-DESC
                       腾讯云互动教育极简单接入apaas方案
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry'
   s.dependency 'YYModel'
   s.dependency 'Bugly'
-  s.dependency 'TIWLogger_iOS'
-  s.dependency 'TIWCache_iOS'
+  s.dependency 'TIWLogger_iOS', '1.0.1.21'
+  s.dependency 'TIWCache_iOS', '1.0.0.19'
   s.dependency 'TXLiteAVSDK_TRTC', '7.2.8961'
 
 end

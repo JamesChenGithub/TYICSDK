@@ -5,8 +5,8 @@
 //  Created by AlexiChen on 2020/5/6.
 //  Copyright © 2020 AlexiChen. All rights reserved.
 //
-// TYICSDKDebugVersion : 2.0.340
-// TYICSDKGitCommitID : d94b0076054bf2692b1845d2001160996cbb5930
+// TYICSDKDebugVersion : 2.0.347
+// TYICSDKGitCommitID : 62a51bf93a08c048d46831c66a1b1fc6d7300452
 
 #import <UIKit/UIKit.h>
 #import "TYICClassRoomConfig.h"
