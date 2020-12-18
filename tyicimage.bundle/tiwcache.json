@@ -1,15 +1,15 @@
 {
     "resources": [
         {
-            "version": "1.0.0.3",
+            "version": "1.0.0.9",
             "sdkAppId": "0",
             "schoolId": "0",
-            "url": "https://cache.qcloudtiw.com/cache/tyic/tiwresource_1.0.0.3.zip",
+            "url": "https://cache.qcloudtiw.com/cache/tyic/tiwresource_1.0.0.9.zip",
             "files": {
                 "https://open-lite.qcloudtrtc.com/libs/thirdpart/videojs/video.min.js": "/libs/thirdpart/videojs/video.min.js"
             },
             "regexes": {
-                "https:\\/\\/open\\-lite\\.qcloudtrtc\\.com\\/mobile\\/.*?/(.+)": "/$1",
+                "https:\\/\\/open\\-lite\\.qcloudtrtc\\.com\\/mobile\\/.*?/(.+)": "$1",
                 "https:\\/\\/open\\-lite\\.qcloudtrtc\\.com\\/libs\\/(.+)": "/libs/$1"
             },
             "media": {
