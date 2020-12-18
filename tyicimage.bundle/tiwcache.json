@@ -1,10 +1,10 @@
 {
     "resources": [
         {
-            "version": "1.0.0.9",
+            "version": "1.0.0.10",
             "sdkAppId": "0",
             "schoolId": "0",
-            "url": "https://cache.qcloudtiw.com/cache/tyic/tiwresource_1.0.0.9.zip",
+            "url": "https://cache.qcloudtiw.com/cache/tyic/tiwresource_1.0.0.10.zip",
             "files": {
                 "https://open-lite.qcloudtrtc.com/libs/thirdpart/videojs/video.min.js": "/libs/thirdpart/videojs/video.min.js"
             },
